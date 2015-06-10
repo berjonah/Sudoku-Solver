@@ -1,0 +1,1 @@
+C:\Users\Andrew\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe.config
