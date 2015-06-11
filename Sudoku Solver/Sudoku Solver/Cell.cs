@@ -92,5 +92,47 @@ namespace Sudoku_Solver
         {
             this.Number = number;
         }
+
+        public void findPosibilities()
+        {
+            List<int> notAllowed = new List<int>();
+            foreach(Cell cell in Square.Cells)
+            {
+                if(cell.Solved)
+                {
+                    if(!notAllowed.Contains(cell.Number))
+                    {
+                        notAllowed.Add(cell.Number);
+                    }
+                }   
+            }
+            foreach(Cell cell in Row.Cells)
+            {
+                if(cell.Solved)
+                {
+                    if(!notAllowed.Contains(cell.Number))
+                    {
+                        notAllowed.Add(cell.Number);
+                    }
+                }
+            }
+            foreach(Cell cell in Column.Cells)
+            {
+                if (cell.Solved)
+                {
+                    if (!notAllowed.Contains(cell.Number))
+                    {
+                        notAllowed.Add(cell.Number);
+                    }
+                }
+            }
+            for(int i = 1; i<=9;i++)
+            {
+                if(!notAllowed.Contains(i))
+                {
+                    posibilities.Add(i);
+                }
+            }
+        }
     }
 }
