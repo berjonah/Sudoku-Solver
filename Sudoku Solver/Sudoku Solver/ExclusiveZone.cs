@@ -22,18 +22,18 @@ namespace Sudoku_Solver
             }
         }
 
-        public ExclusiveZone(List<Cell> inSquares)
+        public ExclusiveZone(List<Cell> list)
         {
-            if(inSquares.Capacity != 9)
+            if(list.Count != 9)
             {
                 throw new ArgumentOutOfRangeException("Argument must contain List of 9 squares");
             }
             else
             {
-                Cells = inSquares;
+                Cells = list;
             }
         }
-        bool testExclusivity()
+        public bool testExclusivity()
         {
             List<int> found = new List<int>();
             foreach(Cell test in Cells)

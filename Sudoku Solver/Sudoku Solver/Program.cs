@@ -14,7 +14,12 @@ namespace Sudoku_Solver
         [STAThread]
         static void Main()
         {
-            
+            List<Cell> list = new List<Cell>();
+            for(int i = 0; i < 9; i++)
+            {
+                list.Add(new Cell(true,9));
+            }
+            Square square = new Square(list);
         }
     }
 }

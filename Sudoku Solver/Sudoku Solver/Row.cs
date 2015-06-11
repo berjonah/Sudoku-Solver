@@ -8,5 +8,13 @@ namespace Sudoku_Solver
 {
     class Row : ExclusiveZone
     {
+        public Row(List<Cell> list)
+            : base(list)
+        {
+            foreach(Cell cell in list)
+            {
+                cell.Row = this;
+            }
+        }
     }
 }

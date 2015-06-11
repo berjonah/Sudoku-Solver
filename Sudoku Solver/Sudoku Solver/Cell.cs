@@ -41,7 +41,46 @@ namespace Sudoku_Solver
             }
         }
 
-        private int[] posibilities;
+        private List<int> posibilities;
+
+        private Row row;
+        public Row Row
+        {
+            get
+            {
+                return row;
+            }
+            set
+            {
+                row = value;
+            }
+        }
+
+        private Column column;
+        public Column Column
+        {
+            get
+            {
+                return column;
+            }
+            set
+            {
+                column = value;
+            }
+        }
+
+        private Square square;
+        public Square Square
+        {
+            get
+            {
+                return square;
+            }
+            set
+            {
+                square = value;
+            }
+        }
 
         public Cell(bool solved)
         {

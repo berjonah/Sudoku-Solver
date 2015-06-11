@@ -8,6 +8,13 @@ namespace Sudoku_Solver
 {
     class Square : ExclusiveZone
     {
-
+        public Square(List<Cell> list)
+            : base(list)
+        {
+            foreach(Cell cell in list)
+            {
+                cell.Square = this;
+            }
+        }
     }
 }
