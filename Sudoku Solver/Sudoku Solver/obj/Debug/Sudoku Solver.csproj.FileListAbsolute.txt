@@ -6,3 +6,7 @@ C:\Users\Andrew\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\D
 C:\Users\Andrew\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.csproj.GenerateResource.Cache
 C:\Users\Andrew\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.exe
 C:\Users\Andrew\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.pdb
+C:\Users\Andrew Fillmore\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe.config
+C:\Users\Andrew Fillmore\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.csprojResolveAssemblyReference.cache
+C:\Users\Andrew Fillmore\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku_Solver.Properties.Resources.resources
+C:\Users\Andrew Fillmore\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.csproj.GenerateResource.Cache
