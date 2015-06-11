@@ -9,34 +9,34 @@ namespace Sudoku_Solver
     abstract class ExclusiveZone
     {
         //has 9 squares
-        private Square[] squares;
-        public Square[] Squares
+        private List<Cell> cells;
+        public List<Cell> Cells
         {
             get
             {
-                return squares;
+                return cells;
             }
             set
             {
-                squares = value;
+                cells = value;
             }
         }
 
-        public ExclusiveZone(Square[] inSquares)
+        public ExclusiveZone(List<Cell> inSquares)
         {
-            if(inSquares.Length!=9)
+            if(inSquares.Capacity != 9)
             {
-                throw new ArgumentOutOfRangeException("Argument must contain array of 9 squares");
+                throw new ArgumentOutOfRangeException("Argument must contain List of 9 squares");
             }
             else
             {
-                Squares = inSquares;
+                Cells = inSquares;
             }
         }
         bool testExclusivity()
         {
             List<int> found = new List<int>();
-            foreach(Square test in Squares)
+            foreach(Cell test in Cells)
             {
                 if(test.Solved)
                 {

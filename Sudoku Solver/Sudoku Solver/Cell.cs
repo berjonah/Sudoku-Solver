@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sudoku_Solver
 {
-    class Square
+    class Cell
     {
         private bool solved;
         public bool Solved
@@ -43,12 +43,12 @@ namespace Sudoku_Solver
 
         private int[] posibilities;
 
-        public Square(bool solved)
+        public Cell(bool solved)
         {
             this.Solved = solved;
         }
 
-        public Square(bool solved, int number)
+        public Cell(bool solved, int number)
             : this(solved)
         {
             this.Number = number;
