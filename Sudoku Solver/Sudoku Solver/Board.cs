@@ -83,8 +83,17 @@ namespace Sudoku_Solver
             Rows = new List<Row>();
             foreach(List<Cell> row in Cells)
             {
+
                 //each Row is just a row from cells
-                Rows.Add(new Row(row));
+                Row newRow = new Row(row);
+                if (newRow.testExclusivity())
+                {
+                    Rows.Add(newRow);
+                }
+                else
+                {
+                    throw new Exception("Invalid Row");
+                }
             }
 
             Columns = new List<Column>();
@@ -97,23 +106,71 @@ namespace Sudoku_Solver
                 {
                     list.Add(Cells[i][j]);
                 }
-                Columns.Add(new Column(list));
+                Column newColumn = new Column(list);
+                if(newColumn.testExclusivity())
+                {
+                    Columns.Add(newColumn);
+                }
+                else
+                {
+                    throw new Exception("Invalid Column");
+                }
+                
             }
 
             Squares = new List<Square>();
-            for(int i = 0; i < count; i+=3)
+            for (int h = 0; h < count; h += 3)
             {
-                List<Cell> list = new List<Cell>();
-                for(int j = 0; j < 2; j++)
+                for (int i = 0; i < count; i += 3)
                 {
-                    for(int k = 0; k < 2; k++)
+                    List<Cell> list = new List<Cell>();
+                    for (int j = 0; j < 3; j++)
                     {
-                        list.Add(Cells[i + j][i + k]);
+                        for (int k = 0; k < 3; k++)
+                        {
+                            list.Add(Cells[h + j][i + k]);
+                        }
+                    }
+                    Square newSquare = new Square(list);
+                    if (newSquare.testExclusivity())
+                    {
+                        Squares.Add(newSquare);
+                    }
+                    else
+                    {
+                        throw new Exception("Invalid Square");
                     }
                 }
-                Squares.Add(new Square(list));
             }
         }
 
+        public bool solve(int row, int col)
+        {
+            if (row == 9)
+                return true;
+
+            if (Cells[row][col].Solved)
+            {
+                if(solve(col == 8 ? (row + 1) :row, (col + 1) % 9))
+                    return true;
+            }
+            else
+            {
+                for(int i = 1; i <= 9; i++)
+                {
+                    if(Cells[row][col].isValid(i))
+                    {
+                        Cells[row][col].Number = i;
+                        if (solve(col == 8 ? (row + 1) : row, (col + 1) % 9))
+                            return true;
+                        else
+                        {
+                            Cells[row][col].Number = 0;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
     }
 }

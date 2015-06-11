@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Text;
 
 namespace Sudoku_Solver
 {
@@ -12,14 +14,28 @@ namespace Sudoku_Solver
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(String[] args)
         {
-            List<Cell> list = new List<Cell>();
-            for(int i = 0; i < 9; i++)
+            String[] lines = File.ReadAllLines(args[0]);
+            int count = lines.Length;
+            String[][] textNumbers = new String[count][];
+            for(int i = 0; i<count;i++)
             {
-                list.Add(new Cell(true,9));
+                textNumbers[i] = lines[i].Split(',');
             }
-            Square square = new Square(list);
+
+            List<List<Cell>> list = new List<List<Cell>>();
+            for(int i = 0; i<count;i++)
+            {
+                list.Add(new List<Cell>());
+                for(int j=0; j<count;j++)
+                {
+                    list[i].Add(new Cell(int.Parse(textNumbers[i][j])));
+                }
+            }
+
+            Board board = new Board(list);
+            bool foo = board.solve(0,0);
         }
     }
 }

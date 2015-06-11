@@ -30,7 +30,7 @@ namespace Sudoku_Solver
             }
             set
             {
-                if(value < 1 || value > 9)
+                if(value < 0 || value > 9)
                 {
                     throw new ArgumentOutOfRangeException("Value must be between 1 and 9");
                 }
@@ -40,8 +40,6 @@ namespace Sudoku_Solver
                 }
             }
         }
-
-        private List<int> posibilities;
 
         private Row row;
         public Row Row
@@ -93,45 +91,28 @@ namespace Sudoku_Solver
             this.Number = number;
         }
 
-        public void findPosibilities()
+        public Cell(int number)
         {
-            List<int> notAllowed = new List<int>();
-            foreach(Cell cell in Square.Cells)
+            if(number == 0)
             {
-                if(cell.Solved)
-                {
-                    if(!notAllowed.Contains(cell.Number))
-                    {
-                        notAllowed.Add(cell.Number);
-                    }
-                }   
+                this.Solved = false;
             }
-            foreach(Cell cell in Row.Cells)
+            else
             {
-                if(cell.Solved)
-                {
-                    if(!notAllowed.Contains(cell.Number))
-                    {
-                        notAllowed.Add(cell.Number);
-                    }
-                }
+                this.Solved = true;
+                this.Number = number;
             }
-            foreach(Cell cell in Column.Cells)
+        }
+
+        public bool isValid(int el)
+        {
+            if(!Column.isIn(el) && !Row.isIn(el) && !Square.isIn(el))
             {
-                if (cell.Solved)
-                {
-                    if (!notAllowed.Contains(cell.Number))
-                    {
-                        notAllowed.Add(cell.Number);
-                    }
-                }
+                return true;
             }
-            for(int i = 1; i<=9;i++)
+            else
             {
-                if(!notAllowed.Contains(i))
-                {
-                    posibilities.Add(i);
-                }
+                return false;
             }
         }
     }

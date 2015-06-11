@@ -26,7 +26,7 @@ namespace Sudoku_Solver
         {
             if(list.Count != 9)
             {
-                throw new ArgumentOutOfRangeException("Argument must contain List of 9 squares");
+                throw new ArgumentOutOfRangeException("Argument must contain List of 9 cells");
             }
             else
             {
@@ -51,6 +51,18 @@ namespace Sudoku_Solver
                 }
             }
             return true;
+        }
+
+        public bool isIn(int el)
+        {
+            foreach(Cell cell in Cells)
+            {
+                if(cell.Number == el)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

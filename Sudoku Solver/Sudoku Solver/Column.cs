@@ -16,5 +16,6 @@ namespace Sudoku_Solver
                 cell.Column = this;
             }
         }
+
     }
 }
