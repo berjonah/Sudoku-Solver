@@ -16,5 +16,11 @@ namespace Sudoku_Solver
         {
             InitializeComponent();
         }
+
+        private void solveButton_Click(object sender, EventArgs e)
+        {
+
+            Board board = new Board();
+        }
     }
 }

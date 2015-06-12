@@ -29,60 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.box00 = new System.Windows.Forms.TextBox();
-            this.box10 = new System.Windows.Forms.TextBox();
-            this.box20 = new System.Windows.Forms.TextBox();
-            this.box30 = new System.Windows.Forms.TextBox();
-            this.box50 = new System.Windows.Forms.TextBox();
-            this.box40 = new System.Windows.Forms.TextBox();
-            this.box80 = new System.Windows.Forms.TextBox();
-            this.box70 = new System.Windows.Forms.TextBox();
-            this.box60 = new System.Windows.Forms.TextBox();
-            this.box81 = new System.Windows.Forms.TextBox();
-            this.box71 = new System.Windows.Forms.TextBox();
-            this.box61 = new System.Windows.Forms.TextBox();
-            this.box41 = new System.Windows.Forms.TextBox();
-            this.box51 = new System.Windows.Forms.TextBox();
-            this.box31 = new System.Windows.Forms.TextBox();
-            this.box21 = new System.Windows.Forms.TextBox();
-            this.box11 = new System.Windows.Forms.TextBox();
-            this.box01 = new System.Windows.Forms.TextBox();
-            this.box82 = new System.Windows.Forms.TextBox();
-            this.box72 = new System.Windows.Forms.TextBox();
-            this.box62 = new System.Windows.Forms.TextBox();
-            this.box42 = new System.Windows.Forms.TextBox();
-            this.box52 = new System.Windows.Forms.TextBox();
-            this.box32 = new System.Windows.Forms.TextBox();
-            this.box22 = new System.Windows.Forms.TextBox();
-            this.box12 = new System.Windows.Forms.TextBox();
-            this.box02 = new System.Windows.Forms.TextBox();
-            this.box85 = new System.Windows.Forms.TextBox();
-            this.box75 = new System.Windows.Forms.TextBox();
-            this.box65 = new System.Windows.Forms.TextBox();
-            this.box45 = new System.Windows.Forms.TextBox();
-            this.box55 = new System.Windows.Forms.TextBox();
-            this.box35 = new System.Windows.Forms.TextBox();
-            this.box25 = new System.Windows.Forms.TextBox();
-            this.box15 = new System.Windows.Forms.TextBox();
-            this.box05 = new System.Windows.Forms.TextBox();
-            this.box84 = new System.Windows.Forms.TextBox();
-            this.box74 = new System.Windows.Forms.TextBox();
-            this.box64 = new System.Windows.Forms.TextBox();
-            this.box44 = new System.Windows.Forms.TextBox();
-            this.box54 = new System.Windows.Forms.TextBox();
-            this.box34 = new System.Windows.Forms.TextBox();
-            this.box24 = new System.Windows.Forms.TextBox();
-            this.box14 = new System.Windows.Forms.TextBox();
-            this.box04 = new System.Windows.Forms.TextBox();
-            this.box83 = new System.Windows.Forms.TextBox();
-            this.box73 = new System.Windows.Forms.TextBox();
-            this.box63 = new System.Windows.Forms.TextBox();
-            this.box43 = new System.Windows.Forms.TextBox();
-            this.box53 = new System.Windows.Forms.TextBox();
-            this.box33 = new System.Windows.Forms.TextBox();
-            this.box23 = new System.Windows.Forms.TextBox();
-            this.box13 = new System.Windows.Forms.TextBox();
-            this.box03 = new System.Windows.Forms.TextBox();
+            this.solveButton = new System.Windows.Forms.Button();
             this.box88 = new System.Windows.Forms.TextBox();
             this.box78 = new System.Windows.Forms.TextBox();
             this.box68 = new System.Windows.Forms.TextBox();
@@ -110,7 +57,60 @@
             this.box26 = new System.Windows.Forms.TextBox();
             this.box16 = new System.Windows.Forms.TextBox();
             this.box06 = new System.Windows.Forms.TextBox();
-            this.solveButton = new System.Windows.Forms.Button();
+            this.box85 = new System.Windows.Forms.TextBox();
+            this.box75 = new System.Windows.Forms.TextBox();
+            this.box65 = new System.Windows.Forms.TextBox();
+            this.box45 = new System.Windows.Forms.TextBox();
+            this.box55 = new System.Windows.Forms.TextBox();
+            this.box35 = new System.Windows.Forms.TextBox();
+            this.box25 = new System.Windows.Forms.TextBox();
+            this.box15 = new System.Windows.Forms.TextBox();
+            this.box05 = new System.Windows.Forms.TextBox();
+            this.box84 = new System.Windows.Forms.TextBox();
+            this.box74 = new System.Windows.Forms.TextBox();
+            this.box64 = new System.Windows.Forms.TextBox();
+            this.box44 = new System.Windows.Forms.TextBox();
+            this.box54 = new System.Windows.Forms.TextBox();
+            this.box34 = new System.Windows.Forms.TextBox();
+            this.box24 = new System.Windows.Forms.TextBox();
+            this.box14 = new System.Windows.Forms.TextBox();
+            this.box04 = new System.Windows.Forms.TextBox();
+            this.box83 = new System.Windows.Forms.TextBox();
+            this.box73 = new System.Windows.Forms.TextBox();
+            this.box63 = new System.Windows.Forms.TextBox();
+            this.box43 = new System.Windows.Forms.TextBox();
+            this.box53 = new System.Windows.Forms.TextBox();
+            this.box33 = new System.Windows.Forms.TextBox();
+            this.box23 = new System.Windows.Forms.TextBox();
+            this.box13 = new System.Windows.Forms.TextBox();
+            this.box03 = new System.Windows.Forms.TextBox();
+            this.box82 = new System.Windows.Forms.TextBox();
+            this.box72 = new System.Windows.Forms.TextBox();
+            this.box62 = new System.Windows.Forms.TextBox();
+            this.box42 = new System.Windows.Forms.TextBox();
+            this.box52 = new System.Windows.Forms.TextBox();
+            this.box32 = new System.Windows.Forms.TextBox();
+            this.box22 = new System.Windows.Forms.TextBox();
+            this.box12 = new System.Windows.Forms.TextBox();
+            this.box02 = new System.Windows.Forms.TextBox();
+            this.box81 = new System.Windows.Forms.TextBox();
+            this.box71 = new System.Windows.Forms.TextBox();
+            this.box61 = new System.Windows.Forms.TextBox();
+            this.box41 = new System.Windows.Forms.TextBox();
+            this.box51 = new System.Windows.Forms.TextBox();
+            this.box31 = new System.Windows.Forms.TextBox();
+            this.box21 = new System.Windows.Forms.TextBox();
+            this.box11 = new System.Windows.Forms.TextBox();
+            this.box01 = new System.Windows.Forms.TextBox();
+            this.box80 = new System.Windows.Forms.TextBox();
+            this.box70 = new System.Windows.Forms.TextBox();
+            this.box60 = new System.Windows.Forms.TextBox();
+            this.box40 = new System.Windows.Forms.TextBox();
+            this.box50 = new System.Windows.Forms.TextBox();
+            this.box30 = new System.Windows.Forms.TextBox();
+            this.box20 = new System.Windows.Forms.TextBox();
+            this.box10 = new System.Windows.Forms.TextBox();
+            this.box00 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -205,395 +205,15 @@
             this.panel1.Size = new System.Drawing.Size(344, 251);
             this.panel1.TabIndex = 0;
             // 
-            // box00
-            // 
-            this.box00.Location = new System.Drawing.Point(12, 12);
-            this.box00.MaxLength = 1;
-            this.box00.Name = "box00";
-            this.box00.Size = new System.Drawing.Size(20, 20);
-            this.box00.TabIndex = 0;
-            // 
-            // box10
-            // 
-            this.box10.Location = new System.Drawing.Point(38, 12);
-            this.box10.Name = "box10";
-            this.box10.Size = new System.Drawing.Size(20, 20);
-            this.box10.TabIndex = 1;
-            // 
-            // box20
-            // 
-            this.box20.Location = new System.Drawing.Point(64, 12);
-            this.box20.Name = "box20";
-            this.box20.Size = new System.Drawing.Size(20, 20);
-            this.box20.TabIndex = 2;
-            // 
-            // box30
-            // 
-            this.box30.Location = new System.Drawing.Point(90, 12);
-            this.box30.Name = "box30";
-            this.box30.Size = new System.Drawing.Size(20, 20);
-            this.box30.TabIndex = 3;
-            // 
-            // box50
-            // 
-            this.box50.Location = new System.Drawing.Point(142, 12);
-            this.box50.Name = "box50";
-            this.box50.Size = new System.Drawing.Size(20, 20);
-            this.box50.TabIndex = 4;
-            // 
-            // box40
-            // 
-            this.box40.Location = new System.Drawing.Point(116, 12);
-            this.box40.Name = "box40";
-            this.box40.Size = new System.Drawing.Size(20, 20);
-            this.box40.TabIndex = 5;
-            // 
-            // box80
-            // 
-            this.box80.Location = new System.Drawing.Point(220, 12);
-            this.box80.Name = "box80";
-            this.box80.Size = new System.Drawing.Size(20, 20);
-            this.box80.TabIndex = 8;
-            // 
-            // box70
-            // 
-            this.box70.Location = new System.Drawing.Point(194, 12);
-            this.box70.Name = "box70";
-            this.box70.Size = new System.Drawing.Size(20, 20);
-            this.box70.TabIndex = 7;
-            // 
-            // box60
-            // 
-            this.box60.Location = new System.Drawing.Point(168, 12);
-            this.box60.MaxLength = 1;
-            this.box60.Name = "box60";
-            this.box60.Size = new System.Drawing.Size(20, 20);
-            this.box60.TabIndex = 6;
-            // 
-            // box81
-            // 
-            this.box81.Location = new System.Drawing.Point(220, 38);
-            this.box81.Name = "box81";
-            this.box81.Size = new System.Drawing.Size(20, 20);
-            this.box81.TabIndex = 17;
-            // 
-            // box71
-            // 
-            this.box71.Location = new System.Drawing.Point(194, 38);
-            this.box71.Name = "box71";
-            this.box71.Size = new System.Drawing.Size(20, 20);
-            this.box71.TabIndex = 16;
-            // 
-            // box61
-            // 
-            this.box61.Location = new System.Drawing.Point(168, 38);
-            this.box61.MaxLength = 1;
-            this.box61.Name = "box61";
-            this.box61.Size = new System.Drawing.Size(20, 20);
-            this.box61.TabIndex = 15;
-            // 
-            // box41
-            // 
-            this.box41.Location = new System.Drawing.Point(116, 38);
-            this.box41.Name = "box41";
-            this.box41.Size = new System.Drawing.Size(20, 20);
-            this.box41.TabIndex = 14;
-            // 
-            // box51
-            // 
-            this.box51.Location = new System.Drawing.Point(142, 38);
-            this.box51.Name = "box51";
-            this.box51.Size = new System.Drawing.Size(20, 20);
-            this.box51.TabIndex = 13;
-            // 
-            // box31
-            // 
-            this.box31.Location = new System.Drawing.Point(90, 38);
-            this.box31.Name = "box31";
-            this.box31.Size = new System.Drawing.Size(20, 20);
-            this.box31.TabIndex = 12;
-            // 
-            // box21
-            // 
-            this.box21.Location = new System.Drawing.Point(64, 38);
-            this.box21.Name = "box21";
-            this.box21.Size = new System.Drawing.Size(20, 20);
-            this.box21.TabIndex = 11;
-            // 
-            // box11
-            // 
-            this.box11.Location = new System.Drawing.Point(38, 38);
-            this.box11.Name = "box11";
-            this.box11.Size = new System.Drawing.Size(20, 20);
-            this.box11.TabIndex = 10;
-            // 
-            // box01
-            // 
-            this.box01.Location = new System.Drawing.Point(12, 38);
-            this.box01.MaxLength = 1;
-            this.box01.Name = "box01";
-            this.box01.Size = new System.Drawing.Size(20, 20);
-            this.box01.TabIndex = 9;
-            // 
-            // box82
-            // 
-            this.box82.Location = new System.Drawing.Point(220, 64);
-            this.box82.Name = "box82";
-            this.box82.Size = new System.Drawing.Size(20, 20);
-            this.box82.TabIndex = 26;
-            // 
-            // box72
-            // 
-            this.box72.Location = new System.Drawing.Point(194, 64);
-            this.box72.Name = "box72";
-            this.box72.Size = new System.Drawing.Size(20, 20);
-            this.box72.TabIndex = 25;
-            // 
-            // box62
-            // 
-            this.box62.Location = new System.Drawing.Point(168, 64);
-            this.box62.MaxLength = 1;
-            this.box62.Name = "box62";
-            this.box62.Size = new System.Drawing.Size(20, 20);
-            this.box62.TabIndex = 24;
-            // 
-            // box42
-            // 
-            this.box42.Location = new System.Drawing.Point(116, 64);
-            this.box42.Name = "box42";
-            this.box42.Size = new System.Drawing.Size(20, 20);
-            this.box42.TabIndex = 23;
-            // 
-            // box52
-            // 
-            this.box52.Location = new System.Drawing.Point(142, 64);
-            this.box52.Name = "box52";
-            this.box52.Size = new System.Drawing.Size(20, 20);
-            this.box52.TabIndex = 22;
-            // 
-            // box32
-            // 
-            this.box32.Location = new System.Drawing.Point(90, 64);
-            this.box32.Name = "box32";
-            this.box32.Size = new System.Drawing.Size(20, 20);
-            this.box32.TabIndex = 21;
-            // 
-            // box22
-            // 
-            this.box22.Location = new System.Drawing.Point(64, 64);
-            this.box22.Name = "box22";
-            this.box22.Size = new System.Drawing.Size(20, 20);
-            this.box22.TabIndex = 20;
-            // 
-            // box12
-            // 
-            this.box12.Location = new System.Drawing.Point(38, 64);
-            this.box12.Name = "box12";
-            this.box12.Size = new System.Drawing.Size(20, 20);
-            this.box12.TabIndex = 19;
-            // 
-            // box02
-            // 
-            this.box02.Location = new System.Drawing.Point(12, 64);
-            this.box02.MaxLength = 1;
-            this.box02.Name = "box02";
-            this.box02.Size = new System.Drawing.Size(20, 20);
-            this.box02.TabIndex = 18;
-            // 
-            // box85
-            // 
-            this.box85.Location = new System.Drawing.Point(220, 142);
-            this.box85.Name = "box85";
-            this.box85.Size = new System.Drawing.Size(20, 20);
-            this.box85.TabIndex = 53;
-            // 
-            // box75
-            // 
-            this.box75.Location = new System.Drawing.Point(194, 142);
-            this.box75.Name = "box75";
-            this.box75.Size = new System.Drawing.Size(20, 20);
-            this.box75.TabIndex = 52;
-            // 
-            // box65
-            // 
-            this.box65.Location = new System.Drawing.Point(168, 142);
-            this.box65.MaxLength = 1;
-            this.box65.Name = "box65";
-            this.box65.Size = new System.Drawing.Size(20, 20);
-            this.box65.TabIndex = 51;
-            // 
-            // box45
-            // 
-            this.box45.Location = new System.Drawing.Point(116, 142);
-            this.box45.Name = "box45";
-            this.box45.Size = new System.Drawing.Size(20, 20);
-            this.box45.TabIndex = 50;
-            // 
-            // box55
-            // 
-            this.box55.Location = new System.Drawing.Point(142, 142);
-            this.box55.Name = "box55";
-            this.box55.Size = new System.Drawing.Size(20, 20);
-            this.box55.TabIndex = 49;
-            // 
-            // box35
-            // 
-            this.box35.Location = new System.Drawing.Point(90, 142);
-            this.box35.Name = "box35";
-            this.box35.Size = new System.Drawing.Size(20, 20);
-            this.box35.TabIndex = 48;
-            // 
-            // box25
-            // 
-            this.box25.Location = new System.Drawing.Point(64, 142);
-            this.box25.Name = "box25";
-            this.box25.Size = new System.Drawing.Size(20, 20);
-            this.box25.TabIndex = 47;
-            // 
-            // box15
-            // 
-            this.box15.Location = new System.Drawing.Point(38, 142);
-            this.box15.Name = "box15";
-            this.box15.Size = new System.Drawing.Size(20, 20);
-            this.box15.TabIndex = 46;
-            // 
-            // box05
-            // 
-            this.box05.Location = new System.Drawing.Point(12, 142);
-            this.box05.MaxLength = 1;
-            this.box05.Name = "box05";
-            this.box05.Size = new System.Drawing.Size(20, 20);
-            this.box05.TabIndex = 45;
-            // 
-            // box84
-            // 
-            this.box84.Location = new System.Drawing.Point(220, 116);
-            this.box84.Name = "box84";
-            this.box84.Size = new System.Drawing.Size(20, 20);
-            this.box84.TabIndex = 44;
-            // 
-            // box74
-            // 
-            this.box74.Location = new System.Drawing.Point(194, 116);
-            this.box74.Name = "box74";
-            this.box74.Size = new System.Drawing.Size(20, 20);
-            this.box74.TabIndex = 43;
-            // 
-            // box64
-            // 
-            this.box64.Location = new System.Drawing.Point(168, 116);
-            this.box64.MaxLength = 1;
-            this.box64.Name = "box64";
-            this.box64.Size = new System.Drawing.Size(20, 20);
-            this.box64.TabIndex = 42;
-            // 
-            // box44
-            // 
-            this.box44.Location = new System.Drawing.Point(116, 116);
-            this.box44.Name = "box44";
-            this.box44.Size = new System.Drawing.Size(20, 20);
-            this.box44.TabIndex = 41;
-            // 
-            // box54
-            // 
-            this.box54.Location = new System.Drawing.Point(142, 116);
-            this.box54.Name = "box54";
-            this.box54.Size = new System.Drawing.Size(20, 20);
-            this.box54.TabIndex = 40;
-            // 
-            // box34
-            // 
-            this.box34.Location = new System.Drawing.Point(90, 116);
-            this.box34.Name = "box34";
-            this.box34.Size = new System.Drawing.Size(20, 20);
-            this.box34.TabIndex = 39;
-            // 
-            // box24
-            // 
-            this.box24.Location = new System.Drawing.Point(64, 116);
-            this.box24.Name = "box24";
-            this.box24.Size = new System.Drawing.Size(20, 20);
-            this.box24.TabIndex = 38;
-            // 
-            // box14
-            // 
-            this.box14.Location = new System.Drawing.Point(38, 116);
-            this.box14.Name = "box14";
-            this.box14.Size = new System.Drawing.Size(20, 20);
-            this.box14.TabIndex = 37;
-            // 
-            // box04
-            // 
-            this.box04.Location = new System.Drawing.Point(12, 116);
-            this.box04.MaxLength = 1;
-            this.box04.Name = "box04";
-            this.box04.Size = new System.Drawing.Size(20, 20);
-            this.box04.TabIndex = 36;
-            // 
-            // box83
-            // 
-            this.box83.Location = new System.Drawing.Point(220, 90);
-            this.box83.Name = "box83";
-            this.box83.Size = new System.Drawing.Size(20, 20);
-            this.box83.TabIndex = 35;
-            // 
-            // box73
-            // 
-            this.box73.Location = new System.Drawing.Point(194, 90);
-            this.box73.Name = "box73";
-            this.box73.Size = new System.Drawing.Size(20, 20);
-            this.box73.TabIndex = 34;
-            // 
-            // box63
-            // 
-            this.box63.Location = new System.Drawing.Point(168, 90);
-            this.box63.MaxLength = 1;
-            this.box63.Name = "box63";
-            this.box63.Size = new System.Drawing.Size(20, 20);
-            this.box63.TabIndex = 33;
-            // 
-            // box43
-            // 
-            this.box43.Location = new System.Drawing.Point(116, 90);
-            this.box43.Name = "box43";
-            this.box43.Size = new System.Drawing.Size(20, 20);
-            this.box43.TabIndex = 32;
-            // 
-            // box53
-            // 
-            this.box53.Location = new System.Drawing.Point(142, 90);
-            this.box53.Name = "box53";
-            this.box53.Size = new System.Drawing.Size(20, 20);
-            this.box53.TabIndex = 31;
-            // 
-            // box33
-            // 
-            this.box33.Location = new System.Drawing.Point(90, 90);
-            this.box33.Name = "box33";
-            this.box33.Size = new System.Drawing.Size(20, 20);
-            this.box33.TabIndex = 30;
-            // 
-            // box23
-            // 
-            this.box23.Location = new System.Drawing.Point(64, 90);
-            this.box23.Name = "box23";
-            this.box23.Size = new System.Drawing.Size(20, 20);
-            this.box23.TabIndex = 29;
-            // 
-            // box13
-            // 
-            this.box13.Location = new System.Drawing.Point(38, 90);
-            this.box13.Name = "box13";
-            this.box13.Size = new System.Drawing.Size(20, 20);
-            this.box13.TabIndex = 28;
-            // 
-            // box03
-            // 
-            this.box03.Location = new System.Drawing.Point(12, 90);
-            this.box03.MaxLength = 1;
-            this.box03.Name = "box03";
-            this.box03.Size = new System.Drawing.Size(20, 20);
-            this.box03.TabIndex = 27;
+            // solveButton
+            // 
+            this.solveButton.Location = new System.Drawing.Point(257, 116);
+            this.solveButton.Name = "solveButton";
+            this.solveButton.Size = new System.Drawing.Size(75, 20);
+            this.solveButton.TabIndex = 81;
+            this.solveButton.Text = "Solve";
+            this.solveButton.UseVisualStyleBackColor = true;
+            this.solveButton.Click += new System.EventHandler(this.solveButton_Click);
             // 
             // box88
             // 
@@ -790,14 +410,395 @@
             this.box06.Size = new System.Drawing.Size(20, 20);
             this.box06.TabIndex = 54;
             // 
-            // solveButton
+            // box85
             // 
-            this.solveButton.Location = new System.Drawing.Point(257, 116);
-            this.solveButton.Name = "solveButton";
-            this.solveButton.Size = new System.Drawing.Size(75, 20);
-            this.solveButton.TabIndex = 81;
-            this.solveButton.Text = "Solve";
-            this.solveButton.UseVisualStyleBackColor = true;
+            this.box85.Location = new System.Drawing.Point(220, 142);
+            this.box85.Name = "box85";
+            this.box85.Size = new System.Drawing.Size(20, 20);
+            this.box85.TabIndex = 53;
+            // 
+            // box75
+            // 
+            this.box75.Location = new System.Drawing.Point(194, 142);
+            this.box75.Name = "box75";
+            this.box75.Size = new System.Drawing.Size(20, 20);
+            this.box75.TabIndex = 52;
+            // 
+            // box65
+            // 
+            this.box65.Location = new System.Drawing.Point(168, 142);
+            this.box65.MaxLength = 1;
+            this.box65.Name = "box65";
+            this.box65.Size = new System.Drawing.Size(20, 20);
+            this.box65.TabIndex = 51;
+            // 
+            // box45
+            // 
+            this.box45.Location = new System.Drawing.Point(116, 142);
+            this.box45.Name = "box45";
+            this.box45.Size = new System.Drawing.Size(20, 20);
+            this.box45.TabIndex = 50;
+            // 
+            // box55
+            // 
+            this.box55.Location = new System.Drawing.Point(142, 142);
+            this.box55.Name = "box55";
+            this.box55.Size = new System.Drawing.Size(20, 20);
+            this.box55.TabIndex = 49;
+            // 
+            // box35
+            // 
+            this.box35.Location = new System.Drawing.Point(90, 142);
+            this.box35.Name = "box35";
+            this.box35.Size = new System.Drawing.Size(20, 20);
+            this.box35.TabIndex = 48;
+            // 
+            // box25
+            // 
+            this.box25.Location = new System.Drawing.Point(64, 142);
+            this.box25.Name = "box25";
+            this.box25.Size = new System.Drawing.Size(20, 20);
+            this.box25.TabIndex = 47;
+            // 
+            // box15
+            // 
+            this.box15.Location = new System.Drawing.Point(38, 142);
+            this.box15.Name = "box15";
+            this.box15.Size = new System.Drawing.Size(20, 20);
+            this.box15.TabIndex = 46;
+            // 
+            // box05
+            // 
+            this.box05.Location = new System.Drawing.Point(12, 142);
+            this.box05.MaxLength = 1;
+            this.box05.Name = "box05";
+            this.box05.Size = new System.Drawing.Size(20, 20);
+            this.box05.TabIndex = 45;
+            // 
+            // box84
+            // 
+            this.box84.Location = new System.Drawing.Point(220, 116);
+            this.box84.Name = "box84";
+            this.box84.Size = new System.Drawing.Size(20, 20);
+            this.box84.TabIndex = 44;
+            // 
+            // box74
+            // 
+            this.box74.Location = new System.Drawing.Point(194, 116);
+            this.box74.Name = "box74";
+            this.box74.Size = new System.Drawing.Size(20, 20);
+            this.box74.TabIndex = 43;
+            // 
+            // box64
+            // 
+            this.box64.Location = new System.Drawing.Point(168, 116);
+            this.box64.MaxLength = 1;
+            this.box64.Name = "box64";
+            this.box64.Size = new System.Drawing.Size(20, 20);
+            this.box64.TabIndex = 42;
+            // 
+            // box44
+            // 
+            this.box44.Location = new System.Drawing.Point(116, 116);
+            this.box44.Name = "box44";
+            this.box44.Size = new System.Drawing.Size(20, 20);
+            this.box44.TabIndex = 41;
+            // 
+            // box54
+            // 
+            this.box54.Location = new System.Drawing.Point(142, 116);
+            this.box54.Name = "box54";
+            this.box54.Size = new System.Drawing.Size(20, 20);
+            this.box54.TabIndex = 40;
+            // 
+            // box34
+            // 
+            this.box34.Location = new System.Drawing.Point(90, 116);
+            this.box34.Name = "box34";
+            this.box34.Size = new System.Drawing.Size(20, 20);
+            this.box34.TabIndex = 39;
+            // 
+            // box24
+            // 
+            this.box24.Location = new System.Drawing.Point(64, 116);
+            this.box24.Name = "box24";
+            this.box24.Size = new System.Drawing.Size(20, 20);
+            this.box24.TabIndex = 38;
+            // 
+            // box14
+            // 
+            this.box14.Location = new System.Drawing.Point(38, 116);
+            this.box14.Name = "box14";
+            this.box14.Size = new System.Drawing.Size(20, 20);
+            this.box14.TabIndex = 37;
+            // 
+            // box04
+            // 
+            this.box04.Location = new System.Drawing.Point(12, 116);
+            this.box04.MaxLength = 1;
+            this.box04.Name = "box04";
+            this.box04.Size = new System.Drawing.Size(20, 20);
+            this.box04.TabIndex = 36;
+            // 
+            // box83
+            // 
+            this.box83.Location = new System.Drawing.Point(220, 90);
+            this.box83.Name = "box83";
+            this.box83.Size = new System.Drawing.Size(20, 20);
+            this.box83.TabIndex = 35;
+            // 
+            // box73
+            // 
+            this.box73.Location = new System.Drawing.Point(194, 90);
+            this.box73.Name = "box73";
+            this.box73.Size = new System.Drawing.Size(20, 20);
+            this.box73.TabIndex = 34;
+            // 
+            // box63
+            // 
+            this.box63.Location = new System.Drawing.Point(168, 90);
+            this.box63.MaxLength = 1;
+            this.box63.Name = "box63";
+            this.box63.Size = new System.Drawing.Size(20, 20);
+            this.box63.TabIndex = 33;
+            // 
+            // box43
+            // 
+            this.box43.Location = new System.Drawing.Point(116, 90);
+            this.box43.Name = "box43";
+            this.box43.Size = new System.Drawing.Size(20, 20);
+            this.box43.TabIndex = 32;
+            // 
+            // box53
+            // 
+            this.box53.Location = new System.Drawing.Point(142, 90);
+            this.box53.Name = "box53";
+            this.box53.Size = new System.Drawing.Size(20, 20);
+            this.box53.TabIndex = 31;
+            // 
+            // box33
+            // 
+            this.box33.Location = new System.Drawing.Point(90, 90);
+            this.box33.Name = "box33";
+            this.box33.Size = new System.Drawing.Size(20, 20);
+            this.box33.TabIndex = 30;
+            // 
+            // box23
+            // 
+            this.box23.Location = new System.Drawing.Point(64, 90);
+            this.box23.Name = "box23";
+            this.box23.Size = new System.Drawing.Size(20, 20);
+            this.box23.TabIndex = 29;
+            // 
+            // box13
+            // 
+            this.box13.Location = new System.Drawing.Point(38, 90);
+            this.box13.Name = "box13";
+            this.box13.Size = new System.Drawing.Size(20, 20);
+            this.box13.TabIndex = 28;
+            // 
+            // box03
+            // 
+            this.box03.Location = new System.Drawing.Point(12, 90);
+            this.box03.MaxLength = 1;
+            this.box03.Name = "box03";
+            this.box03.Size = new System.Drawing.Size(20, 20);
+            this.box03.TabIndex = 27;
+            // 
+            // box82
+            // 
+            this.box82.Location = new System.Drawing.Point(220, 64);
+            this.box82.Name = "box82";
+            this.box82.Size = new System.Drawing.Size(20, 20);
+            this.box82.TabIndex = 26;
+            // 
+            // box72
+            // 
+            this.box72.Location = new System.Drawing.Point(194, 64);
+            this.box72.Name = "box72";
+            this.box72.Size = new System.Drawing.Size(20, 20);
+            this.box72.TabIndex = 25;
+            // 
+            // box62
+            // 
+            this.box62.Location = new System.Drawing.Point(168, 64);
+            this.box62.MaxLength = 1;
+            this.box62.Name = "box62";
+            this.box62.Size = new System.Drawing.Size(20, 20);
+            this.box62.TabIndex = 24;
+            // 
+            // box42
+            // 
+            this.box42.Location = new System.Drawing.Point(116, 64);
+            this.box42.Name = "box42";
+            this.box42.Size = new System.Drawing.Size(20, 20);
+            this.box42.TabIndex = 23;
+            // 
+            // box52
+            // 
+            this.box52.Location = new System.Drawing.Point(142, 64);
+            this.box52.Name = "box52";
+            this.box52.Size = new System.Drawing.Size(20, 20);
+            this.box52.TabIndex = 22;
+            // 
+            // box32
+            // 
+            this.box32.Location = new System.Drawing.Point(90, 64);
+            this.box32.Name = "box32";
+            this.box32.Size = new System.Drawing.Size(20, 20);
+            this.box32.TabIndex = 21;
+            // 
+            // box22
+            // 
+            this.box22.Location = new System.Drawing.Point(64, 64);
+            this.box22.Name = "box22";
+            this.box22.Size = new System.Drawing.Size(20, 20);
+            this.box22.TabIndex = 20;
+            // 
+            // box12
+            // 
+            this.box12.Location = new System.Drawing.Point(38, 64);
+            this.box12.Name = "box12";
+            this.box12.Size = new System.Drawing.Size(20, 20);
+            this.box12.TabIndex = 19;
+            // 
+            // box02
+            // 
+            this.box02.Location = new System.Drawing.Point(12, 64);
+            this.box02.MaxLength = 1;
+            this.box02.Name = "box02";
+            this.box02.Size = new System.Drawing.Size(20, 20);
+            this.box02.TabIndex = 18;
+            // 
+            // box81
+            // 
+            this.box81.Location = new System.Drawing.Point(220, 38);
+            this.box81.Name = "box81";
+            this.box81.Size = new System.Drawing.Size(20, 20);
+            this.box81.TabIndex = 17;
+            // 
+            // box71
+            // 
+            this.box71.Location = new System.Drawing.Point(194, 38);
+            this.box71.Name = "box71";
+            this.box71.Size = new System.Drawing.Size(20, 20);
+            this.box71.TabIndex = 16;
+            // 
+            // box61
+            // 
+            this.box61.Location = new System.Drawing.Point(168, 38);
+            this.box61.MaxLength = 1;
+            this.box61.Name = "box61";
+            this.box61.Size = new System.Drawing.Size(20, 20);
+            this.box61.TabIndex = 15;
+            // 
+            // box41
+            // 
+            this.box41.Location = new System.Drawing.Point(116, 38);
+            this.box41.Name = "box41";
+            this.box41.Size = new System.Drawing.Size(20, 20);
+            this.box41.TabIndex = 14;
+            // 
+            // box51
+            // 
+            this.box51.Location = new System.Drawing.Point(142, 38);
+            this.box51.Name = "box51";
+            this.box51.Size = new System.Drawing.Size(20, 20);
+            this.box51.TabIndex = 13;
+            // 
+            // box31
+            // 
+            this.box31.Location = new System.Drawing.Point(90, 38);
+            this.box31.Name = "box31";
+            this.box31.Size = new System.Drawing.Size(20, 20);
+            this.box31.TabIndex = 12;
+            // 
+            // box21
+            // 
+            this.box21.Location = new System.Drawing.Point(64, 38);
+            this.box21.Name = "box21";
+            this.box21.Size = new System.Drawing.Size(20, 20);
+            this.box21.TabIndex = 11;
+            // 
+            // box11
+            // 
+            this.box11.Location = new System.Drawing.Point(38, 38);
+            this.box11.Name = "box11";
+            this.box11.Size = new System.Drawing.Size(20, 20);
+            this.box11.TabIndex = 10;
+            // 
+            // box01
+            // 
+            this.box01.Location = new System.Drawing.Point(12, 38);
+            this.box01.MaxLength = 1;
+            this.box01.Name = "box01";
+            this.box01.Size = new System.Drawing.Size(20, 20);
+            this.box01.TabIndex = 9;
+            // 
+            // box80
+            // 
+            this.box80.Location = new System.Drawing.Point(220, 12);
+            this.box80.Name = "box80";
+            this.box80.Size = new System.Drawing.Size(20, 20);
+            this.box80.TabIndex = 8;
+            // 
+            // box70
+            // 
+            this.box70.Location = new System.Drawing.Point(194, 12);
+            this.box70.Name = "box70";
+            this.box70.Size = new System.Drawing.Size(20, 20);
+            this.box70.TabIndex = 7;
+            // 
+            // box60
+            // 
+            this.box60.Location = new System.Drawing.Point(168, 12);
+            this.box60.MaxLength = 1;
+            this.box60.Name = "box60";
+            this.box60.Size = new System.Drawing.Size(20, 20);
+            this.box60.TabIndex = 6;
+            // 
+            // box40
+            // 
+            this.box40.Location = new System.Drawing.Point(116, 12);
+            this.box40.Name = "box40";
+            this.box40.Size = new System.Drawing.Size(20, 20);
+            this.box40.TabIndex = 5;
+            // 
+            // box50
+            // 
+            this.box50.Location = new System.Drawing.Point(142, 12);
+            this.box50.Name = "box50";
+            this.box50.Size = new System.Drawing.Size(20, 20);
+            this.box50.TabIndex = 4;
+            // 
+            // box30
+            // 
+            this.box30.Location = new System.Drawing.Point(90, 12);
+            this.box30.Name = "box30";
+            this.box30.Size = new System.Drawing.Size(20, 20);
+            this.box30.TabIndex = 3;
+            // 
+            // box20
+            // 
+            this.box20.Location = new System.Drawing.Point(64, 12);
+            this.box20.Name = "box20";
+            this.box20.Size = new System.Drawing.Size(20, 20);
+            this.box20.TabIndex = 2;
+            // 
+            // box10
+            // 
+            this.box10.Location = new System.Drawing.Point(38, 12);
+            this.box10.Name = "box10";
+            this.box10.Size = new System.Drawing.Size(20, 20);
+            this.box10.TabIndex = 1;
+            // 
+            // box00
+            // 
+            this.box00.Location = new System.Drawing.Point(12, 12);
+            this.box00.MaxLength = 1;
+            this.box00.Name = "box00";
+            this.box00.Size = new System.Drawing.Size(20, 20);
+            this.box00.TabIndex = 0;
             // 
             // Form1
             // 
