@@ -144,6 +144,11 @@ namespace Sudoku_Solver
             }
         }
 
+        public bool solve()
+        {
+            return solve(0, 0);
+        }
+
         public bool solve(int row, int col)
         {
             if (row == 9)

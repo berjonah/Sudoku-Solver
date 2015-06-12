@@ -16,26 +16,35 @@ namespace Sudoku_Solver
         [STAThread]
         static void Main(String[] args)
         {
-            String[] lines = File.ReadAllLines(args[0]);
-            int count = lines.Length;
-            String[][] textNumbers = new String[count][];
-            for(int i = 0; i<count;i++)
+            if (args.Length == 1)
             {
-                textNumbers[i] = lines[i].Split(',');
-            }
-
-            List<List<Cell>> list = new List<List<Cell>>();
-            for(int i = 0; i<count;i++)
-            {
-                list.Add(new List<Cell>());
-                for(int j=0; j<count;j++)
+                String[] lines = File.ReadAllLines(args[0]);
+                int count = lines.Length;
+                String[][] textNumbers = new String[count][];
+                for (int i = 0; i < count; i++)
                 {
-                    list[i].Add(new Cell(int.Parse(textNumbers[i][j])));
+                    textNumbers[i] = lines[i].Split(',');
                 }
-            }
 
-            Board board = new Board(list);
-            bool foo = board.solve(0,0);
+                List<List<Cell>> list = new List<List<Cell>>();
+                for (int i = 0; i < count; i++)
+                {
+                    list.Add(new List<Cell>());
+                    for (int j = 0; j < count; j++)
+                    {
+                        list[i].Add(new Cell(int.Parse(textNumbers[i][j])));
+                    }
+                }
+                Board board = new Board(list);
+                bool foo = board.solve(0, 0);
+            }
+            else
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Form1());
+            }
+            
         }
     }
 }
