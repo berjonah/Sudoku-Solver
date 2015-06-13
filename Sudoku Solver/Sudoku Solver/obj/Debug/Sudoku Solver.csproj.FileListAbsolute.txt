@@ -15,3 +15,4 @@ C:\Users\Andrew Fillmore\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Sol
 C:\Users\Andrew Fillmore\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.exe
 C:\Users\Andrew Fillmore\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.pdb
 C:\Users\Andrew\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku_Solver.Form1.resources
+C:\Users\Andrew Fillmore\Documents\GitHub\Sudoku-Solver\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku_Solver.Form1.resources

@@ -80,40 +80,40 @@ namespace Sudoku_Solver
             this.Cells = cells;
 
             //setup Rows
-            Rows = new List<Row>();
-            foreach(List<Cell> row in Cells)
+            Columns = new List<Column>();
+            foreach(List<Cell> column in Cells)
             {
 
                 //each Row is just a row from cells
-                Row newRow = new Row(row);
-                if (newRow.testExclusivity())
-                {
-                    Rows.Add(newRow);
-                }
-                else
-                {
-                    throw new Exception("Invalid Row");
-                }
-            }
-
-            Columns = new List<Column>();
-            int count = Cells.Count;
-            for(int i = 0; i < count; i++)
-            {
-                //each Column is the all of the ith indexs from every row
-                List<Cell> list = new List<Cell>();
-                for(int j = 0; j < count; j++)
-                {
-                    list.Add(Cells[i][j]);
-                }
-                Column newColumn = new Column(list);
-                if(newColumn.testExclusivity())
+                Column newColumn = new Column(column);
+                if (newColumn.testExclusivity())
                 {
                     Columns.Add(newColumn);
                 }
                 else
                 {
                     throw new Exception("Invalid Column");
+                }
+            }
+
+            Rows = new List<Row>();
+            int count = Cells.Count;
+            for(int i = 0; i < count; i++)
+            {
+                //each Column is the all of the jth indexs from every column
+                List<Cell> list = new List<Cell>();
+                for(int j = 0; j < count; j++)
+                {
+                    list.Add(Cells[j][i]);
+                }
+                Row newRow = new Row(list);
+                if(newRow.testExclusivity())
+                {
+                    Rows.Add(newRow);
+                }
+                else
+                {
+                    throw new Exception("Invalid Row");
                 }
                 
             }

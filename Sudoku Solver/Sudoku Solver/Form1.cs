@@ -118,35 +118,52 @@ namespace Sudoku_Solver
 
         private void solveButton_Click(object sender, EventArgs e)
         {
-            boxes[0][1].Text = boxes[0][0].Text;
-            //List<List<Cell>> list = new List<List<Cell>>();
-            //for(int i = 0; i < 9; i++)
-            //{
-            //    list.Add(new List<Cell>());
-            //    for(int j = 0; j < 9; j++)
-            //    {
-            //        if(boxes[i][j].Text != "")
-            //        {
-            //            int foo = int.Parse(boxes[i][j].Text);
-            //            list[i].Add(new Cell(foo));
-            //        }
-            //        else
-            //        {
-            //            list[i].Add(new Cell(0));
-            //        }
-            //    }
-            //}
+            //boxes[0][1].Text = boxes[0][0].Text;
+            List<List<Cell>> list = new List<List<Cell>>();
+            for (int i = 0; i < 9; i++)
+            {
+                list.Add(new List<Cell>());
+                for (int j = 0; j < 9; j++)
+                {
+                    if (boxes[i][j].Text != "")
+                    {
+                        int foo = int.Parse(boxes[i][j].Text);
+                        list[i].Add(new Cell(foo));
+                    }
+                    else
+                    {
+                        list[i].Add(new Cell(0));
+                    }
+                }
+            }
 
-            //Board board = new Board(list);
-            //bool bar = board.solve();
+            try
+            {
+                Board board = new Board(list);
+                bool bar = board.solve();
+                for (int i = 0; i < 9; i++)
+                {
+                    for (int j = 0; j < 9; j++)
+                    {
+                        boxes[i][j].Text = board.Cells[i][j].Number.ToString();
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
-            //for(int i = 0; i < 9; i++)
-            //{
-            //    for(int j = 0; j < 9; j++)
-            //    {
-            //        boxes[i][j].Text = board.Cells[i][j].Number.ToString();
-            //    }
-            //}
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+            foreach(List<TextBox> list in boxes)
+            {
+                foreach(TextBox box in list)
+                {
+                    box.Text = "";
+                }
+            }
         }
     }
 }
